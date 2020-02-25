@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+
+
+.center{
+    text-align: center;
+}
+.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
+}
+
+/*****tags******/
+body{
+    @include reset();
+    margin: 0;
+    font-family: 'Nunito', 'sans-serif';
+    font-size: 18px;
+    background: rgb(238, 238, 238);
+}
+a{
+    color: $links;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
