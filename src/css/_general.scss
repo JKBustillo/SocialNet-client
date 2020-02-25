@@ -1,25 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
 
 
-.center{
+.center {
     text-align: center;
 }
-.left{
+.left {
     text-align: left;
 }
-.right{
+.right {
     text-align: right;
 }
 
 /*****tags******/
-body{
+body {
     @include reset();
     margin: 0;
     font-family: 'Nunito', 'sans-serif';
     font-size: 18px;
     background: rgb(238, 238, 238);
 }
-a{
+
+a {
     color: $links;
 }
 
