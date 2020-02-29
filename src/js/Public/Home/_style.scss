@@ -55,7 +55,9 @@
     justify-content: center;
 
     ul {
-        width: 100%;
+        padding: 0;
+        text-align: left;
+        display: inline-block;
         li {
             list-style: none;
         }
@@ -64,8 +66,36 @@
     .icon-home {
         width: 35px;
         height: 35px;
-        fill: white;
         float: left;
         margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 650px) {
+    .home {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 100vh;
+
+        .home-white {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 5% 7% 6%;
+            line-height: 30px;
+        }
+
+        .home-blue {
+            align-items: center;
+            width: 50%;
+            height: 100vh;
+            margin-top: 0;
+            padding: 0 7%;
+        }
+    }
+
+    ul {
+        width: 400px;
     }
 }

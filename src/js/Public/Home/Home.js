@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import logo from "../../../assets/logo.png";
 import chat from "../../../assets/chat.png";
 import people from "../../../assets/people.png";
@@ -8,14 +9,14 @@ function Home() {
     return (
         <div className="home">
             <div className="home-white">
-                <a href="/" alt="socialnet-logo"><img className="logo" src={logo} alt="logo"></img></a>
+                <img className="logo" src={logo} alt="logo"></img>
                 <h2>Ya vi que eres un mariquita, <br/>
                 ahora tiene sentido.</h2>
 
                 <h3>Únete a SocialNet hoy.</h3>
 
-                <a href="/signup" className="signup-home">Regístrate</a><br />
-                <a href="/login" className="login-home">Inicia sesión</a>
+                <Link to="/signup" className="signup-home">Regístrate</Link><br />
+                <Link to="/login" className="login-home">Inicia sesión</Link>
             </div>
             <div className="home-blue">
                 <ul>
