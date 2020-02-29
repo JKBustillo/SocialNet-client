@@ -15,22 +15,6 @@
         margin-top: 59px;
     }
 
-    .signup-home {
-        background: $primary-color;
-        width: calc(100% - 1em);
-        display: block;
-        color: white;
-        border-radius: 50px;
-        padding: .4em;
-        text-decoration: none;
-        font-size: 1.4em;
-        font-weight: 600;
-        text-align: center;
-        &:hover {
-            background: darken($primary-color, 10%);
-        }
-    }
-
     .login-home {
         width: calc(100% - 1.2em);
         display: block;
@@ -74,6 +58,24 @@
         height: 35px;
         float: left;
         margin-right: 10px;
+    }
+}
+
+
+
+.signup-home {
+    background: $primary-color;
+    width: calc(100% - 1em);
+    display: block;
+    color: white;
+    border-radius: 50px;
+    padding: .4em;
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: 600;
+    text-align: center;
+    &:hover {
+        background: darken($primary-color, 10%);
     }
 }
 
