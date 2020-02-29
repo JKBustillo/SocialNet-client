@@ -11,7 +11,7 @@ function Login() {
             <input type="password" placeholder="Contraseña"></input>
             <Link className="signup-home" to="/">Inicia sesión</Link>
             <div className="links">
-                <Link to="/forgotpassword">¿Olvidaste tu contraseña?</Link> - <Link to="signup">Regístrate en SocialNet</Link>
+                <Link to="/recoverpass">¿Olvidaste tu contraseña?</Link> - <Link to="signup">Regístrate en SocialNet</Link>
             </div>
         </div>
     )
