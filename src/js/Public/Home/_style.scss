@@ -26,6 +26,9 @@
         font-size: 1.4em;
         font-weight: 600;
         text-align: center;
+        &:hover {
+            background: darken($primary-color, 10%);
+        }
     }
 
     .login-home {
@@ -41,6 +44,9 @@
         font-size: 1.4em;
         font-weight: 600;
         text-align: center;
+        &:hover {
+            background: darken(white, 10%);
+        }
     }
 }
 

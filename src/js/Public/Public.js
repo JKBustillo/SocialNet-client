@@ -1,9 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import Home from "./Home/Home";
-// import { BrowserRouter, Route } from "react-router-dom";
-// import Home from "./Home/Home";
-// import Login from "./Login/Login";
+import Login from "./Login/Login";
 // import SignUp from "./SignUp/SignUp";
 // import PasswordRecovery from "./PasswordRecovery/PassRecovery";
 // import Footer from "./Footer/Footer";
@@ -15,6 +13,7 @@ function Public() {
     <main>
       <BrowserRouter>
         <Route path="/" exact component={Home} />
+        <Route path="/login" component={Login} />
       </BrowserRouter>
     </main>
   );
