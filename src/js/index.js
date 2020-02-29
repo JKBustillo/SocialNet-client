@@ -11,10 +11,10 @@ function Main() {
     }, [isAuth]);
 
     const setAuthentication = val => {
-    if (!val) {
-        sessionStorage.clear();
-    }
-    setIsAuth(val);
+        if (!val) {
+            sessionStorage.clear();
+        }
+        setIsAuth(val);
     };
 
     return (

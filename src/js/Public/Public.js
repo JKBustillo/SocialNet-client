@@ -1,4 +1,6 @@
 import React from "react";
+import { BrowserRouter, Route } from "react-router-dom";
+import Home from "./Home/Home";
 // import { BrowserRouter, Route } from "react-router-dom";
 // import Home from "./Home/Home";
 // import Login from "./Login/Login";
@@ -11,10 +13,9 @@ import React from "react";
 function Public() {
   return (
     <main>
-        Hola.
-      {/* <BrowserRouter>
-
-      </BrowserRouter> */}
+      <BrowserRouter>
+        <Route path="/" exact component={Home} />
+      </BrowserRouter>
     </main>
   );
 }
