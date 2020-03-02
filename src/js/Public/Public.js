@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Home/Home";
 import Login from "./Login/Login";
 import Register from "./Register/Register";
@@ -11,12 +11,14 @@ import PasswordRecovery from "./PasswordRecovery/PasswordRecovery";
 function Public() {
   return (
     <main>
-      <BrowserRouter>
-        <Route path="/" exact component={Home} />
-        <Route path="/login" component={Login} />
-        <Route path="/signup" component={Register} />
-        <Route path="/recoverpass" component={PasswordRecovery} />
-      </BrowserRouter>
+      <Router>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/login" component={Login} />
+          <Route path="/signup" component={Register} />
+          <Route path="/recoverpass" component={PasswordRecovery} />
+        </Switch>
+      </Router>
     </main>
   );
 }
