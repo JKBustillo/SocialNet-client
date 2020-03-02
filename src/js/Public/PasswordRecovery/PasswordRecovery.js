@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function PasswordRecovery() {
     return (
-        <div className="recover">
+        <div className="recover page">
             <Link className="logo-link" to="/"><img className="logo" src={logo} alt="logo" /></Link>
             <h3>Recupera tu contraseña</h3>
             <input type="email" placeholder="Correo electrónico"></input>

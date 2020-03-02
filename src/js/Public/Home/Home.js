@@ -7,7 +7,7 @@ import search from "../../../assets/search.png";
 
 function Home() {
     return (
-        <div className="home">
+        <div className="home page">
             <div className="home-white">
                 <img className="logo" src={logo} alt="logo"></img>
                 <h2>Ya vi que eres un mariquita, <br/>

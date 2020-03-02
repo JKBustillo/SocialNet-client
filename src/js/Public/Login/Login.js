@@ -4,7 +4,7 @@ import logo from '../../../assets/logo.png';
 
 function Login() {
     return (
-        <div className="login">
+        <div className="login page">
             <Link className="logo-link" to="/"><img className="logo" src={logo} alt="logo" /></Link>
             <h3>Inicia sesión en SocialNet</h3>
             <input type="email" placeholder="Correo electrónico"></input>
