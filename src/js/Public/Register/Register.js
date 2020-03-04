@@ -17,7 +17,7 @@ function Register() {
                 </div>
                 <div className="inputs-item">
                     <input type="email" placeholder="Correo electrónico"></input>
-                    <input type="number" placeholder="Teléfono"></input>
+                    <input type="text" placeholder="Teléfono"></input>
                 </div>
                 <div className="inputs-item">
                     <input type="password" placeholder="Contraseña"></input>
