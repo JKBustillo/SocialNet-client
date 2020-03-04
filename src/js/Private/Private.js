@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import Header from "./Header/Header";
+// import Header from "./Header/Header";
 // import Home from "./Home/Home";
 // import Login from "./Login/Login";
 // import SignUp from "./SignUp/SignUp";
@@ -12,9 +12,10 @@ import Header from "./Header/Header";
 function Private(props) {
   return (
     <main>
+      <h1>Private.</h1>
       <BrowserRouter>
-        <Header />
-        {/* <Route path="/" exact component={Home} />
+        {/* <Header />
+        <Route path="/" exact component={Home} />
         <Route
           path="/login"
           render={() => <Login setAuthentication={props.setAuthentication} />}

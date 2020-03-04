@@ -7,7 +7,6 @@ import Register from "./Register/Register";
 import PasswordRecovery from "./PasswordRecovery/PasswordRecovery";
 // import Footer from "./Footer/Footer";
 // import About from "./About/About";
-// import Search from "./Search/Search";
 
 function Public() {
   return (

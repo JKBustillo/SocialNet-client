@@ -9,6 +9,10 @@ function Login() {
             <h3>Inicia sesión en SocialNet</h3>
             <input type="email" placeholder="Correo electrónico"></input>
             <input type="password" placeholder="Contraseña"></input>
+            <div className="check-login">
+                <input type="checkbox"></input>
+                <h4>Recordar contraseña</h4>
+            </div>
             <Link className="signup-home" to="/">Inicia sesión</Link>
             <div className="links">
                 <Link to="/recoverpass">¿Olvidaste tu contraseña?</Link> - <Link to="signup">Regístrate en SocialNet</Link>

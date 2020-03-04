@@ -24,6 +24,33 @@ a {
     color: $links;
 }
 
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.logo-link {
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    padding: 1em;
+    margin-bottom: 2em;
+    display: block;
+    background: $primary-color-fade;
+    border-style: none;
+    border-bottom: solid;
+    border-radius: 10px;
+    border-color: $primary-color-fade2;
+}
+
+.links {
+    margin-top: 2em;
+}
+
 .container {
     width: 80%;
     margin: 0 auto;

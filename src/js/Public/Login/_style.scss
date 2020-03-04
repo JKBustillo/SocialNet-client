@@ -4,30 +4,15 @@
     text-align: center;
     margin: 3em 33% 0;
 
-    .logo {
-        width: 40px;
-        height: 40px;
+    .check-login {
+        display: flex;
+        margin-bottom: -1.4em;
     }
 
-    .logo-link {
-        width: 40px;
-        height: 40px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    input {
-        padding: 1em;
-        margin-bottom: 2em;
-        display: block;
-        background: $primary-color-fade;
-        border-style: none;
-        border-bottom: solid;
-        border-radius: 10px;
-        border-color: $primary-color-fade2;
-    }
-
-    .links {
-        margin-top: 2em;
+    h4 {
+        position: relative;
+        top: -26px;
+        left: 5px;
     }
 }
 

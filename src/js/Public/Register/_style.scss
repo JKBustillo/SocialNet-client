@@ -1,0 +1,43 @@
+.register {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 3em 15% 0;
+
+    .inputs {
+        input {
+            width: 92%;
+        }
+    }
+
+    h3 {
+        margin-top: -.4em;
+        text-align: left;
+    }
+
+    .links {
+        font-size: .9em;
+        margin-bottom: 1em;
+    }
+}
+
+@media only screen and (min-width: 650px) {
+    .register {
+        margin: 3em 33% 0;
+
+        .inputs {
+            input {
+                width: 200px;
+            }
+
+            .inputs-item {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        .links {
+            font-size: 1em;
+        }
+    }
+}
