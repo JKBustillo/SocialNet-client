@@ -9,7 +9,7 @@ function Register() {
     const [phoneNumber, setPhoneNumber] = useState("");
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
-    const [date, setDate] = useState(0, 0, 0);
+    const [birth, setBirth] = useState(0, 0, 0);
 
     return (
         <form className="register page">
@@ -65,8 +65,8 @@ function Register() {
             <h3>Fecha de nacimiento: </h3>
             <input
                 type="date"
-                value={date}
-                onChange={e => setDate(e.target.value)}
+                value={birth}
+                onChange={e => setBirth(e.target.value)}
                 placeholder="Fecha de nacimiento">    
             </input>
 
