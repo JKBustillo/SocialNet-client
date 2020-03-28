@@ -25,8 +25,7 @@ function Login() {
                     console.error(error);
                 }
            }
-
-   })()
+        })()
    // eslint-disable-next-line 
    }, [click]);
 

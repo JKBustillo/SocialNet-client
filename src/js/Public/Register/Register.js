@@ -25,23 +25,20 @@ function Register() {
                     birth: birth,
                     pass: password,
                 }
-            console.dir(data);
-            try {
-                const response = await axios.post(`${server_url}/auth/register`, data);
-                console.dir(response);
-                alert("Registro exitoso 👌");
-            } catch (error) {
-                console.error(error);
+                console.dir(data);
+                try {
+                    const response = await axios.post(`${server_url}/auth/register`, data);
+                    console.dir(response);
+                    alert("Registro exitoso 👌");
+                } catch (error) {
+                    console.error(error);
+                }
+            } else{
+                if(password !== ""){
+                    alert("Las contraseñas no coinciden 🤧");
+                }
             }
-            
-            
-        } else{
-            if(password !== ""){
-                alert("Las contraseñas no coinciden 🤧");
-            }
-        }
-
-    })()
+        })()
     // eslint-disable-next-line 
     }, [click]);
 
