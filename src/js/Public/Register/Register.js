@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../../assets/logo.png';
+import axios from 'axios';
 
 function Register() {
     const [name, setName] = useState("");
@@ -9,7 +10,40 @@ function Register() {
     const [phoneNumber, setPhoneNumber] = useState("");
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
-    const [birth, setBirth] = useState(0, 0, 0);
+    const [birth, setBirth] = useState("");
+    const [click, setClick] = useState(false);
+    const server_url = 'http://localhost:3001';
+
+    useEffect(() => {
+         (async () => {
+            if (password === confirmPassword && password !== "" && confirmPassword !== ""){
+                const data = {
+                    name: name,
+                    last: lastName,
+                    email: email,
+                    phone: phoneNumber,
+                    birth: birth,
+                    pass: password,
+                }
+            console.dir(data);
+            try {
+                const response = await axios.post(`${server_url}/auth/register`, data);
+                console.dir(response);
+                alert("Registro exitoso 👌");
+            } catch (error) {
+                console.error(error);
+            }
+            
+            
+        } else{
+            if(password !== ""){
+                alert("Las contraseñas no coinciden 🤧");
+            }
+        }
+
+    })()
+    // eslint-disable-next-line 
+    }, [click]);
 
     return (
         <form className="register page">
@@ -70,7 +104,9 @@ function Register() {
                 placeholder="Fecha de nacimiento">    
             </input>
 
-            <Link className="signup-home" to="/">Regístrate</Link>
+            <button type="button" className="signup-home" 
+                onClick={e => setClick(!click)}
+            >Regístrate</button>
 
             <div className="links">
                 <Link to="/recoverpass">¿Olvidaste tu contraseña?</Link> - <Link to="login">Inicia sesión</Link>

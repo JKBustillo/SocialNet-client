@@ -1,10 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../../assets/logo.png';
+import axios from 'axios';
 
 function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [click, setClick] = useState(false);
+    const server_url = 'http://localhost:3001';
+
+    useEffect(() => {
+        (async () => {
+           if (password !== "" && email !== ""){
+                const data = {
+                    email: email,
+                    pass: password,
+                }
+                console.dir(data);
+                try {
+                    const response = await axios.post(`${server_url}/auth/login`, data);
+                    console.dir(response);
+                    alert("Sesión exitoso 👌");
+                } catch (error) {
+                    console.error(error);
+                }
+           }
+
+   })()
+   // eslint-disable-next-line 
+   }, [click]);
 
     return (
         <form className="login page">
@@ -29,7 +53,7 @@ function Login() {
                 <h4>Recordar contraseña</h4>
             </div>
 
-            <Link className="signup-home" to="/">Inicia sesión</Link>
+            <button type="button" className="signup-home" onClick={e => setClick(!click)}>Inicia sesión</button>
 
             <div className="links">
                 <Link to="/recoverpass">¿Olvidaste tu contraseña?</Link> - <Link to="signup">Regístrate en SocialNet</Link>

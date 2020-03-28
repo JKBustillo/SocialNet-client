@@ -1,0 +1,393 @@
+/*****common*****/
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,800&display=swap");
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+/*****tags******/
+body {
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito', 'sans-serif';
+  font-size: 18px;
+}
+
+a {
+  color: #1B95E0;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.logo-link {
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input {
+  padding: 1em;
+  margin-bottom: 2em;
+  display: block;
+  background: rgba(47, 109, 241, 0.1);
+  border-style: none;
+  border-bottom: solid;
+  border-radius: 10px;
+  border-color: rgba(47, 109, 241, 0.4);
+}
+
+.links {
+  margin-top: 2em;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/***transitions***/
+.page {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+}
+
+/* simple - enter transition 300ms, exit 150ms */
+.fade-appear,
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 300ms linear 150ms;
+  transition: opacity 300ms linear 150ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 150ms linear;
+  transition: opacity 150ms linear;
+}
+
+.logoContainer {
+  margin: 50px 0 20px 0;
+  text-align: center;
+}
+
+.logoContainer .logo {
+  width: 80px;
+}
+
+/*****components*****/
+header {
+  background: #2f6df1;
+  padding: 1em 0;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+header a.logo {
+  font-weight: bold;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul li a {
+  padding: 1em;
+}
+
+header nav ul li a:hover {
+  background: #0f51de;
+}
+
+h1 {
+  margin-top: 2em;
+}
+
+.home-white {
+  margin: 15px;
+}
+
+.home-white .logo {
+  width: 80px;
+  height: 100px;
+}
+
+.home-white h2 {
+  font-size: 1.5em;
+}
+
+.home-white h3 {
+  font-size: 1.4em;
+  margin-top: 59px;
+}
+
+.home-white .login-home {
+  width: calc(100% - 1.2em);
+  display: block;
+  color: #2f6df1;
+  border-radius: 50px;
+  border-color: #2f6df1;
+  border-style: solid;
+  border-width: 5px;
+  padding: .3em;
+  text-decoration: none;
+  font-size: 1.4em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.home-white .login-home:hover {
+  background: #e6e6e6;
+}
+
+.home-blue {
+  background: #2f6df1;
+  color: white;
+  font-size: 1.4em;
+  font-weight: 600;
+  padding: 100px 0;
+  margin-top: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home-blue ul {
+  padding: 0;
+  text-align: left;
+  display: inline-block;
+}
+
+.home-blue ul li {
+  list-style: none;
+}
+
+.home-blue .icon-home {
+  width: 35px;
+  height: 35px;
+  float: left;
+  margin-right: 10px;
+}
+
+.signup-home {
+  background: #2f6df1;
+  width: calc(100% - 1em);
+  display: block;
+  color: white;
+  border-radius: 50px;
+  padding: .4em;
+  text-decoration: none;
+  font-size: 1.4em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.signup-home:hover {
+  background: #0f51de;
+}
+
+@media only screen and (min-width: 650px) {
+  .home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    height: 100vh;
+  }
+  .home .home-white {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 5% 7% 6%;
+    line-height: 30px;
+  }
+  .home .home-blue {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50%;
+    height: 100vh;
+    margin-top: 0;
+    padding: 0 7%;
+  }
+  ul {
+    width: 400px;
+  }
+}
+
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin: 3em 33% 0;
+}
+
+.login .check-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: -1.4em;
+}
+
+.login h4 {
+  position: relative;
+  top: -26px;
+  left: 5px;
+}
+
+@media only screen and (max-width: 650px) {
+  .login {
+    margin: 3em 10% 0;
+  }
+  .login .links {
+    font-size: .8em;
+  }
+}
+
+.register {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin: 3em 15% 0;
+}
+
+.register .inputs input {
+  width: 92%;
+}
+
+.register h3 {
+  margin-top: -.4em;
+  text-align: left;
+}
+
+.register .links {
+  font-size: .9em;
+  margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 650px) {
+  .register {
+    margin: 3em 33% 0;
+  }
+  .register .inputs input {
+    width: 200px;
+  }
+  .register .inputs .inputs-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .register .links {
+    font-size: 1em;
+  }
+}
+
+.recover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin: 3em 33% 0;
+}
+
+.recover .logo {
+  width: 40px;
+  height: 40px;
+}
+
+.recover .logo-link {
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.recover input {
+  padding: 1em;
+  margin-bottom: 2em;
+  display: block;
+  background: rgba(47, 109, 241, 0.1);
+  border-style: none;
+  border-bottom: solid;
+  border-radius: 10px;
+  border-color: rgba(47, 109, 241, 0.4);
+}
+
+.recover .links {
+  margin-top: 2em;
+}
+
+@media only screen and (max-width: 650px) {
+  .recover {
+    margin: 3em 10% 0;
+  }
+  .recover .links {
+    font-size: .8em;
+  }
+}
+/*# sourceMappingURL=index.css.map */
