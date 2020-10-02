@@ -1,21 +1,17 @@
 # SocialNet
 
-Este proyecto fue creado usando [Create React App](https://github.com/facebook/create-react-app).
+## Project Setup
 
-## Comandos para utilizar
+    npm install
 
-### `npm start`
+## Run the app
 
-Corre la app en entorno de desarrollo en el puerto 3000.<br />
-Abrir [http://localhost:3000](http://localhost:3000) para verla en el navegador.
+    npm start
 
-Esta página se recargará si se detectan cambios en el código.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### `npm run build`
+## Production Build
 
-Genera la app lista para producción en la carpeta `build`.<br />
-Empaqueta correctamente React en modo de producción y optimiza la compilación para obtener el mejor rendimiento.
+    npm run build
 
-¡Y ya estaría lista para ser desplegada!
-
-Para saber más sobre esto, visite: [deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Builds the app for production to the `build` folder and is ready to be deployed!
